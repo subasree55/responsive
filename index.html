@@ -3,34 +3,50 @@
     <head>
         <meta name="'viewport" charset="URF-8" content="width=device-width, initial-scale=1.0"/>
         <title>responsive</title>
+        </head>
         <style>
-            @media (max-width: 500px){
             body{
-                background-color: aqua;
-
+                background-color: wheat;
             }
+            body>div>div{
+                display: inline-block;
             }
-            @media (max-width: 700px) and (min-width: 501px){
-                body{
-                    background-color: antiquewhite;
-                }
+            .first{
+                float: left;
             }
-            @media (max-width: 1000px) and (min-width: 701px)
-            {
-                body{
-                    background-color: yellowgreen;
-                }
+            .second{
+                float: right;
             }
-            @media (min-width: 1001px){
-                body{
-                    background-color: brown;
-                }
+            img{
+                float: left;
+                margin-right: 20px;
+            }
+            footer{
+               clear: both;
+               float: right;
+               margin-top: 6%; 
             }
         </style>
-    </head>
     <body>
         <div>
-
+            <h2>dev.com</h2>
+            <h1 style="font-size: 70px;">
+                We are a <span style="color: blue;">creative</span> <br>design Agency
+            </h1>
+            <br><br>
+            <div class="first">
+                <img src="./fun2.jpg">
+                <p style="font-weight: bold;">Beauty</p>
+                <p>playing is a very good exercise that helps us to keep our mind fresh and to reduce weight</p>
+            </div>
+            <div class="second">
+                <img src="./fun3.jpg">
+                <p style="font-weight: bold;">Team</p>
+                <p>when we are with group of our friends then we would be out of our control on enjoying</p>
+            </div>
+            <footer>
+                @copyrightsxxxx
+            </footer>
         </div>
     </body>
 </HTML>
